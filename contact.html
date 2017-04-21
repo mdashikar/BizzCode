@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BizzCode</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/slider-def.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo/182.64.png"></a>
+      </div>
+      <nav>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+    <div id="slider">
+      <div class="slides">
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h1>Web Development</h1>
+              <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/img/1.jpg">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h1>Mobile App Development</h1>
+              <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/img/as.jpg">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h1>Software Development</h1>
+              <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/img/3.jpg">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h1>Search Engin Optimization</h1>
+              <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/img/4.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="switch">
+        <ul>
+          <li>
+            <div class="on"></div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="contact">
+        <div class="layout">	 
+            <div class="text-center">
+              <h1 class="section-title">Contact Us</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan venenatis lectus sed sollicitudin. Duis in odio ex. Sed elementum varius enim. In vel tincidunt lorem. Donec gravida felis vitae ipsum pharetra maximus.</p>
+            </div>
+            <div class="map">
+                <div class="left-side" style="width:35%;float:left;margin:2%;">
+                    <h3>BizzCode</h3><br><br>
+                    <address>
+                        hello@underscore.co.uk<br>
+                        +44 (0)20 7631 8400<br> <br>
+                        Visit us at:<br>
+                        9 Little Portland Street<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                </div>
+                <div class="right-side">
+                    <div id="googleMap" style="width:60%;height:300px;"></div>
+                </div>
+            </div>
+            <div class="grid-8 form" id="getForm">
+              <form action="" method="post" id="contact_form" name="contactForm">
+                <div class="form-inline clearfix">
+                  <div class="form-group grid-6 ">
+                    <input type="text" placeholder="name" id="exampleInputName" name="name" class="form-control">
+                  </div>
+                  <div class="form-group grid-6">
+                    <input type="email" placeholder="email address" id="exampleInputEmail" name="email" class="form-control">
+                  </div>
+                  <div class="form-group grid-6">
+                    <input type="text" placeholder="subject" id="exampleInputSubject" name="subject" class="form-control">
+                  </div>
+                  <div class="form-group grid-6">
+                    <input type="text" placeholder="company" id="exampleInputCompany" name="company" class="form-control">
+                  </div>
+                  <div class="form-group grid-12">
+                    <textarea placeholder="message" id="exampleInputMessage" rows="3" name="message" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div style="display:none;" class="success" id="mail_success">Your message has been sent successfully.
+                  </div><!-- success message -->
+                  <div style="display:none;" class="error" id="mail_fail"> Sorry, error occured this time sending your message.
+                  </div><!-- error message -->
+                </div>
+                <div id="submit" class="form-group grid-12">
+                  <input type="submit" value="send" class="btn  btn-lg costom-btn" id="send_message">
+                </div>
+              </form>
+            </div> 
+            <div class="grid-12">       
+              
+            </div>     
+        </div>	
+    </section>	
+
+
+    <footer>
+      <h1> Opensource your work, knowledge is free <span>Developed by <a href="https://www.facebook.com/jhonashik">Md. Ashiqur Rahman</a></span></h1>
+    </footer>
+    
+    <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(24.89904, 91.87198),
+            zoom:8,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM4id5d5Rt_epvkfk6ZaWvuVeT7AJqgz8&callback=myMap"></script>
+  </body>
+</html>
